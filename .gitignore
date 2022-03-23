@@ -1,0 +1,8 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+_gh_pages
+.ruby-version
+node_modules

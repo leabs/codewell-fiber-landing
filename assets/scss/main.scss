@@ -1,0 +1,198 @@
+---
+---
+
+@import "./_type";
+@import "./_variables";
+@import "./_nav";
+@import "./_footer";
+
+$purple: #4d13d1;
+html {
+  body {
+    .container{
+      padding:0 12px;
+    }
+    .purple-button{
+      background: $purple !important;
+      color:#fff !important;
+    }
+    .white-button{
+      background: #fff !important;
+      color:$purple !important;
+    }
+    .purple-link{
+      color: $purple !important;
+      font-weight:700;
+      text-decoration: underline;
+      background: transparent;
+      border: none;
+    }
+    .dark-link{
+      color: #000!important;
+      font-weight:700;
+      background: transparent;
+      border: none;
+    }
+    p {
+      font-family: $body-font-family !important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    button,
+    .button {
+      font-family: $heading-font-family !important;
+    }
+    .is-hero-illustration{
+      background-image: url('../../FiberStarterFiles/Assets/hero-Illustration.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 400px;
+      height:400px;
+    }
+    section.custom-hero{
+      background: #fbf8f3 !important;
+      padding:160px 0;
+    }
+    .checkmark-container{
+      margin-top: 30px;
+      img{
+        margin-right:12px;
+        
+      }
+      span{
+        position: relative;
+        top: -4px;
+      }
+      
+    }
+    .section1{
+      margin: 60px 0;
+      h2{
+        margin-bottom:40px;
+      }
+      h4{
+        color:$purple !important;
+      }
+      h5{
+        font-weight:700;
+        margin-bottom:12px;
+      }
+      img{
+        max-width:60px;
+        margin-bottom:12px;
+      }
+    }
+    .section2{
+      color:#fff;
+      margin:60px auto;
+      .container{
+        background:$purple;
+        border-radius:10px;
+        min-height:400px;
+        padding-right:40px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+        .right-portfolio{
+          height:450px;
+          background-image: url(../../FiberStarterFiles/Assets/PageImage.png);
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+          padding-right:40px;
+        }
+      }
+    }
+    .posts{
+      min-height: 220px;
+      margin-bottom:60px;
+      .post-card{
+        margin:12px;
+       border-radius: 5px;
+       -webkit-border-radius:5px;
+       -moz-border-radius:5px;
+       -ms-border-radius:5px;
+       -o-border-radius:5px;
+       border:1px solid rgba(0,0,0,0.2);
+}
+      .post-title{
+        font-weight:700;
+        color: $purple !important;
+      }
+      .post-body{
+        margin-bottom:20px;
+      }
+      .button{
+        font-weight:700;
+        color: $purple !important;
+        background:#fff;
+        font-size:16px;
+        border:1px solid rgba(0,0,0,0.2);
+        width:100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .section1{
+    h2{
+      max-width:600px;
+    }
+  }
+}
+// removes dropdown arrow in tablet and smaller
+@media only screen and (max-width: 1023px) {
+  body {
+    section.custom-hero{
+      padding:60px 0 !important;
+    }
+    .is-hero-illustration{
+      min-height: 250px;
+      margin-bottom:0;
+      background-size: 250px !important;
+      height:250px;
+    }
+    .hero-body{
+      .button{
+        width:100%;
+      }
+    }
+    .section2{
+      h2{
+        color:#fff !important;
+      }
+      .button{
+        width:100%;
+      }
+      .right-portfolio{
+        height:240px !important;
+        background-position: top;
+
+      }
+      .container{
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        margin:6px;
+        padding: 0 40px;
+}
+    }
+  }
+  .columns.is-reverse-mobile {
+    flex-direction: column-reverse;
+    display: flex;
+    .column {
+      width: 100%; 
+
+  }
+}
+}
+
+

@@ -1,0 +1,36 @@
+body {
+  nav.navbar {
+    background: #fbf8f3;
+
+    .navbar-center {
+      margin: 0 auto;
+
+      a {
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// removes dropdown arrow in tablet and smaller
+@media only screen and (max-width: 1023px) {
+  body {
+    nav.navbar {
+      .navbar-link:not(.is-arrowless)::after {
+        display: none;
+      }
+      .navbar-item{
+        display:block !important;
+        text-align: left !important;
+      }
+      .navbar-end{
+        .buttons {
+          display:block !important;
+        text-align: left !important;
+        }
+      }
+      
+    }
+  }
+}

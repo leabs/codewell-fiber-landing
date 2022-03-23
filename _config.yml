@@ -1,0 +1,22 @@
+# I removed the bloat in this file, look at https://jekyllrb.com/ if you're new to jekyll and need more info.
+title: Fiber Portfolio Service
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en # the language your site is written in
+themecolor: "" # Optional theme Color for Chrome, Firefox OS and Opera
+plugins:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+
+permalink: /:title:output_ext # post output path
+
+sass:
+  sass_dir: assets/scss
+
+# optional sections on index, allows you to block in content
+nav: true
+header: true
+posts: true
+footer: true

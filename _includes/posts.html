@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="posts">
+    <div class="container">
+      <div class="columns">
+        {% for post in site.posts %}
+        <div class="column post-card">
+          <div class="columns">
+            <div class="column is-2"><img src="../../FiberStarterFiles/Assets/{{ post.pic }}" /></div>
+            <div class="column post-title">{{ post.title }}<small style="color:rgba(0,0,0,0.6); font-weight:500; display: block">{{ post.subtitle }}</small></div>
+
+          </div>
+          <div class="post-body">{{post.content}}</div>
+
+          <a class="button is-light">View {{post.title}}'s Portfolio</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
